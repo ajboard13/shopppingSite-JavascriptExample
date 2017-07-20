@@ -1,0 +1,37 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping List</title>
+</head>
+<body>
+
+<h1>Welcome to Aaron's store!</h1><br>
+
+<h4>Select the items you want below: </h4><br>
+
+<tr>
+	<td><BUTTON onclick = "addToList('corn',2.00)">Corn</BUTTON> $2.00</td>
+	<td><BUTTON onclick = "addToList('milk',3.00)">Milk</BUTTON> $3.00</td>
+</tr><br><br>
+<tr>
+	<td><BUTTON onclick = "addToList('eggs',1.50)">Eggs</BUTTON> $1.50</td>
+	<td><BUTTON onclick = "addToList('cereal',4.00)">Cereal</BUTTON> $4.00</td>
+</tr><br><br>
+<tr>
+	<td><BUTTON onclick = "addToList('bread',2.50)">Bread</BUTTON> $2.50</td>
+	<td><BUTTON onclick = "addToList('candy',1.00)">Candy</BUTTON> $1.00</td>
+</tr><br><br>
+<BUTTON onclick = "removeLastItem()">Remove Last Item</BUTTON>
+
+
+<h2>Your Shopping List</h2>
+<p id="shoppingList"></p><br>
+<h3>Total:</h3>
+<p id="totalPrice"></p>
+
+
+<script src="scripts/shoppingHelper.js"></script>
+
+</body>
+</html>
